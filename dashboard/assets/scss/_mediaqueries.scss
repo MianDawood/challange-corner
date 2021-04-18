@@ -1,0 +1,276 @@
+@media screen and (max-width: 990px) {
+  .top-bar {
+    .lang-change,
+    .icons,
+    .profile-name {
+      display: none;
+    }
+  }
+
+  body {
+      overflow-x: hidden !important;
+  }
+  .lower-bar {
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    left: -120%;
+    transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+
+    box-shadow: 1px 0 30px 5px rgba(0, 0, 0, 0.493);
+
+    
+    ul {
+      height: 100%;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      justify-content: flex-start !important;
+
+      .profile-name,
+      .lang-change,
+      .icons {
+        display: block !important;
+      }
+      .icons {
+        background-color: $bg-color;
+        border-radius: 10px;
+        margin: 0 0 0 2.5rem;
+        padding: 1rem 1rem;
+        ul {
+          display: inline;
+          a {
+            padding: 0;
+          }
+        }
+      }
+      .profile-name {
+        margin: 3rem 0 1rem 2.5rem;
+      }
+    }
+  }
+  .lower-bar-active {
+    transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+    left: 0;
+  }
+  .menu {
+    margin: 0 0 0 20px;
+    span {
+      background-color: white;
+      display: block;
+      width: 35px;
+      height: 4px;
+      margin: 6px 0;
+      border-radius: 15%;
+
+      transition: all 1s;
+      cursor: pointer;
+    }
+  }
+  .active {
+    .line-1,
+    .line-3 {
+      position: relative;
+    }
+    .line-1 {
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+
+      transform: rotate(40deg);
+      top: -1px;
+    }
+    .line-2 {
+
+    width: 0%;
+    opacity: 0;
+    }
+    .line-3 {
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+
+      transform: rotate(-40deg);
+      bottom: -1px;
+    }
+  }
+  section {
+    .container {
+      .overflow {
+        margin: 2rem 1rem;
+        overflow-x: auto;
+      }
+      .page-change {
+        @include flex()
+      }
+      tbody {
+        .player {
+          .player-img {
+            display: none;
+          }
+        }
+      }
+      .page-change {
+        padding: 0;
+        margin: 1rem auto
+      }
+    }
+  }
+  .subscription {
+    .container {
+      @include flex(column);
+      div {
+        width: 90% !important;
+        margin: 2rem 0 !important;
+
+        &.box-1 {
+          margin: 0;
+
+          h1 {
+            margin: 2rem 0 0 0;
+          }
+          
+        }
+
+        &.box-2 {
+          div {
+            i {
+              left: 40%;
+            }
+            .period {
+              right: 0% !important;
+            }
+          }
+        }
+        &.box-2,&.box-3 {
+          div {
+          i {
+            position: absolute;
+            top: 40%;
+            left: 20%;
+          }
+          .amount {
+            color: black;
+            padding: 0;
+            font-size: 3rem;
+            width: 100%;
+          }
+          .period {
+            padding: 0;
+            margin: 0;
+            color: black;
+            position: absolute;
+            bottom: 30%;
+            right:-5%;
+          }
+        }
+        }
+      .btn {
+        width: 80% !important;
+      }
+      }
+    }
+  }
+
+
+  .chat {
+    .container {
+        @include flex(row, flex-start, flex-start);
+
+        .side-panel {
+            width: 100%;
+            
+        }
+        .right-side-panel {
+          width: 100%;
+          .user-info {
+            .info {
+              .content {
+                i {
+                  display: block;
+                  font-size: 1.3rem;
+                  margin-right: 20px;
+                  padding: 10px;
+                  border: 1px solid black;
+                  border-radius: 100px;
+                }
+              }
+            }
+          }
+
+          .message-send {
+            padding-right: 0;
+            form {
+              input {
+                width: 65%;
+              }
+              .btn {
+                padding: .7rem 0;
+                margin: 0;
+                width: 30%;
+              }
+            }
+          }
+        }
+        .blocked {
+          display: none;
+        }
+        
+    }
+  }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  nav {
+    .top-bar {
+      .brand-name {
+        margin: 0 0 0 10px;
+        h1 {
+          padding: 0 0 0 10px;
+          font-size: 0.7rem;
+          font-weight: bold;
+        }
+      }
+      .profile {
+        margin: 0;
+
+        .lang-change {
+          margin: 0 1rem;
+        }
+        .profile-name {
+          .text {
+            display: none;
+          }
+        }
+      }
+    }
+    .lower-bar {
+      background-color: white;
+      width: 100%;
+      ul {
+        list-style: none;
+
+        li {
+          a {
+            font-size: clamp(1rem, 1vw, 1rem);
+          }
+          .btn {
+            margin-top: 1rem;
+            img {
+              position: absolute;
+              top: -10px;
+              right: -15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

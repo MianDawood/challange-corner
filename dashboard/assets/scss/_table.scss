@@ -1,0 +1,108 @@
+section {
+    width: 100%;
+
+    @include flex();
+
+    .container {
+        margin: 5rem 0;
+        width: 90%;
+        font-family: $font;
+        border: 1px solid white;
+        border-radius: 20px;
+        background-color: white;
+
+        .search {
+            text-align: right;
+            
+            input {
+                padding: .7rem;
+                margin: 1.7rem 2rem;
+                text-align: left;
+                font-size: 1rem;
+                border-radius: 10px;
+                border: 1px solid $gray;
+                outline: none;
+            }
+            ::placeholder {
+                font-size: 1rem;
+            }
+        }
+        .overflow {
+            margin: 2rem 5rem;
+            table {
+                width: 100%;
+                border-collapse: collapse;
+    
+                thead {
+                    background-color: $primary-color;
+                    color: white;
+                    padding: 1rem;
+    
+                    th {
+                        padding: 1rem;
+                        font-size: clamp(.7rem, 2vw, 1rem);
+                        font-weight: 400;
+                    }
+                }
+                tbody {
+                    transition: all 200ms;
+                    tr {
+                        text-align: center;
+                        
+                        td {
+                            color: $font-color;
+                        }
+                        .player {
+                            margin: 1rem;
+                            @include flex(row, flex-start );
+                            flex-wrap: wrap;
+                            .player-img {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 100px;
+                                background: url(../img/profile.jpeg);
+                                background-repeat: no-repeat;
+                                background-position: top left;
+                                background-size: 100%;
+    
+                            }
+                            p {
+                                color: black;
+                                padding: 10px;
+                            }
+                        }
+                        .stars {
+                            .checked {
+                                color: orange;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .page-change {
+            @include flex(row, flex-end);
+            margin: 1rem 5rem 2rem 0;
+            div {
+                width: 40px;
+                height: 40px;
+                margin: 0 .2rem;
+                border-radius: 100%;
+                border: 1px solid $gray;
+                @include flex();
+                color: $font-color;
+                cursor: pointer;
+
+                &:hover {
+                    border-color: $primary-color;
+                }
+                &.active {
+                    border: none;
+                    background-color: $primary-color;
+                    color: white;
+                }
+            }
+        }
+    }
+}

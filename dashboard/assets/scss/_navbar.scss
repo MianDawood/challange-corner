@@ -1,0 +1,153 @@
+nav {
+  font-family: $font;
+  .top-bar {
+    background-color: $primary-color;
+    color: white;
+    padding: 0.5rem;
+
+    @include flex(row, space-between);
+
+    .brand-name {
+      @include flex();
+      margin: 0 2rem;
+      h1 {
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0 1.5rem;
+        line-height: 0;
+
+        font-size: 1.2rem;
+      }
+    }
+    .profile {
+      @include flex();
+      margin: 0 2rem;
+
+      .lang-change {
+        margin: 0 1rem;
+
+        .goog-te-combo {
+          padding: 0.5rem 1rem;
+          background-color: #212837;
+          color: white;
+          outline: none;
+          border: none;
+          border-radius: 5px;
+        }
+      }
+      .icons {
+        margin: 0 1rem;
+
+        ul {
+          list-style: none;
+          li {
+            display: inline-block;
+
+            img {
+              padding: 0 0.5rem;
+            }
+          }
+        }
+      }
+      .profile-name {
+        @include flex();
+
+        .text {
+          padding: 0 1rem;
+
+          h2,
+          p {
+            margin: 0.4rem 0;
+          }
+          h2 {
+            font-size: 1rem;
+          }
+          p {
+            font-size: .7rem;
+            text-align: right;
+          }
+        }
+        .profile-img {
+          width: 40px;
+          height: 40px;
+          border-radius: 5px;
+          background-repeat: no-repeat;
+          background-position: top left;
+          background-size: 100% auto;
+        }
+      }
+    }
+  }
+  .lower-bar {
+    padding: 0.5rem;
+    background-color: white;
+    ul {
+      list-style: none;
+      @include flex();
+
+
+      li {
+        display: inline-block;
+
+        .profile-name,.lang-change {
+            display: none;
+        }
+        a {
+          @include flex();
+          text-decoration: none;
+          padding: 1rem 0;
+          margin: 0 0.8rem;
+          font-size: clamp(.6rem, 2vw, .8rem);
+
+          P {
+            color: $font-color;
+            margin: 0 0.8rem;
+            transition: all 200ms;
+            &:hover {
+              color: black;
+            }
+            &.active {
+              font-weight: bold;
+            }
+          }
+        }
+        .btn {
+          position: relative;
+          border: none;
+          padding: 1rem 1.3rem;
+          border-radius: 8px;
+          background-color: $secondary-color;
+          color: white;
+          outline: none;
+
+          img {
+            position: absolute;
+            top: -10px;
+            right: -15px;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.124);
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            clip-path: circle(0% at 50% 50%);
+            transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+          }
+          &:hover:after {
+            clip-path: circle(100% at 50% 50%);
+          }
+          &:active:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+

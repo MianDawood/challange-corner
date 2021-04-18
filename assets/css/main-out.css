@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.left-section, .right-section {
+  width: 50%;
+  height: 100%;
+}
+
+.right-section {
+  background: url(../images/v1_178.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.left-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.left-section .content {
+  color: #707070;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+}
+.left-section .content .main-heading h1 {
+  font-weight: 400;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  padding: .3rem 0;
+}
+.left-section .content .main-heading small {
+  color: #192A40;
+}
+.left-section .content .main-heading small a {
+  color: #192A40;
+  transition: color 200ms;
+}
+.left-section .content .main-heading small a:hover {
+  color: #707070;
+}
+.left-section .content form {
+  padding: 1rem 0;
+}
+.left-section .content form .input-group {
+  border-bottom: 1px solid #C2BFBF;
+  padding: .7rem 1rem;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.left-section .content form .input-group input {
+  border: none;
+  padding: .3rem 1rem;
+  margin: 0 .2rem;
+  outline: none;
+  font-size: .7rem;
+  width: 100%;
+}
+.left-section .content form .input-group img {
+  width: 1rem;
+  height: auto;
+}
+.left-section .content form .input-group ::placeholder, .left-section .content form .input-group ::-webkit-input-placeholder {
+  font-size: .7rem;
+  color: #C2BFBF;
+}
+.left-section .content form .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+  font-size: .8rem;
+  font-weight: 400;
+  color: #000;
+}
+.left-section .content form .row .show-password-toggle {
+  height: 20px;
+  width: 40px;
+  background-color: #C2BFBF;
+  border-radius: 100px;
+  cursor: pointer;
+  padding: 3px;
+}
+.left-section .content form .row .show-password-toggle .circle {
+  height: 100%;
+  width: 50%;
+  background-color: #192A40;
+  border-radius: 100px;
+  transition: all 500ms;
+}
+.left-section .content form .row .show-password-toggle .active {
+  width: 100%;
+  height: 100%;
+}
+.left-section .content form .row .btn {
+  position: relative;
+  border: none;
+  font-size: .7rem;
+  padding: .8rem 1.5rem;
+  border-radius: 5px;
+  background-color: #192A40;
+  color: white;
+  outline: none;
+}
+.left-section .content form .row .btn::after {
+  content: '';
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.124);
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  clip-path: circle(0% at 50% 50%);
+  transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.left-section .content form .row .btn:hover:after {
+  clip-path: circle(100% at 50% 50%);
+}
+.left-section .content form .row .btn:active:after {
+  display: none;
+}
+.left-section .content form .end-content {
+  margin: 3rem 0;
+}
+.left-section .content form .end-content input, .left-section .content form .end-content p {
+  display: inline-block;
+}
+.left-section .content form .end-content input {
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  top: 1px;
+}
+.left-section .content form .end-content p {
+  color: #C2BFBF;
+  padding: 0 .5rem;
+  margin-bottom: 1.5rem;
+}
+.left-section .content form .end-content a {
+  display: block;
+  color: #192A40;
+  transition: color 200ms;
+}
+.left-section .content form .end-content a:hover {
+  color: #707070;
+}
+
+@media screen and (max-width: 900px) {
+  .right-section {
+    display: none;
+  }
+
+  .left-section {
+    width: 100%;
+  }
+  .left-section .content {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

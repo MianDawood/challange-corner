@@ -1,0 +1,144 @@
+.subscription {
+  .container {
+    @include flex(row, space-evenly);
+    div {
+      padding: 1rem;
+      &.box-1 {
+        width: 30%;
+        margin: 3rem 0 3rem 2rem;
+        h1 {
+          font-weight: 400;
+          font-size: clamp(1.3rem, 2vw, 3.4rem);
+          margin: 2rem 0 4rem 0;
+        }
+        div {
+          width: 100%;
+          padding: 0;
+
+          p {
+            color: $font-color;
+            margin: 1.5rem 0;
+          }
+        }
+        .payment {
+          fieldset {
+            width: 100%;
+            height: auto;
+            legend {
+              color: #0032de;
+              padding: 0 5px;
+            }
+            margin: 4rem 0 0 0;
+            padding: 0.7rem 1rem;
+            border: 2px solid #0032de;
+            border-radius: 10px;
+          }
+        }
+      }
+
+      &.box-2,
+      &.box-3 {
+        width: 25%;
+        height: 90% !important;
+        margin: 0 2rem;
+        border-radius: 20px;
+        border: 1px solid $gray;
+        text-align: center;
+
+        @include flex(column);
+        h1 {
+          font-weight: 400;
+          margin: 1rem 0 1.5rem 0;
+          font-size: 1.5rem;
+        }
+        hr {
+          width: 30%;
+          border: 2px solid #aaa;
+          border-radius: 100px;
+        }
+        p {
+          color: $gray;
+          font-size: 0.7rem;
+          padding: 2rem 0;
+          width: 50%;
+        }
+        div {
+          @include flex();
+          position: relative;
+          i {
+            position: absolute;
+            top: 40%;
+            left: 0;
+          }
+          .amount {
+            color: black;
+            padding: 0;
+            font-size: 3rem;
+            width: 100%;
+          }
+          .period {
+            padding: 0;
+            margin: 0;
+            color: black;
+            position: absolute;
+            bottom: 30%;
+            right: -30%;
+          }
+        }
+        .btn {
+          position: relative;
+          border: 1px solid $gray;
+          border-radius: 5px;
+          display: inline-block;
+          color: $font-color;
+          width: 60%;
+          padding: 0.7rem 0;
+          margin: 2rem 0;
+          outline: none;
+
+          text-decoration: none;
+
+          img {
+            position: absolute;
+            top: -10px;
+            right: -15px;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.124);
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            clip-path: circle(0% at 50% 50%);
+            transition: all 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+          }
+          &:hover:after {
+            clip-path: circle(100% at 50% 50%);
+          }
+          &:active:after {
+            display: none;
+          }
+        }
+      }
+
+      &.box-3 {
+        position: relative;
+        img {
+          width: 6rem;
+          position: absolute;
+          top: -40px;
+          right: -40px;
+        }
+        .btn {
+          background-color: $secondary-color;
+          color: white;
+          border: none;
+        }
+      }
+    }
+  }
+}
