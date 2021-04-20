@@ -22,13 +22,14 @@ body {
   font-family: 'Quicksand', sans-serif; }
 
   .permium{
-    position: relative;
+    position:relative;
     border: none;
     padding: 1rem 1.3rem;
     border-radius: 8px;
     background-color: #d30035;
     color: white;
     outline: none;
+  
   }
 
 h1, h2, h3, h4, h5, h6 {
@@ -2163,3 +2164,8 @@ table .badge-success, table .badge-primary, table .badge-warning, table .badge-d
 
 .position-relative {
   position: relative; }
+
+
+  /* subscription css */
+
+  
