@@ -1,0 +1,296 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Quicksand', sans-serif;
+}
+section .row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem;
+  width: 90%;
+}
+section .row .container-1, section .row .container-2 {
+  background-color: white;
+  padding: .5rem;
+}
+section .row .container-1 .card, section .row .container-2 .card {
+  margin: 5.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.123);
+  padding: 2rem;
+  position: relative;
+}
+section .row .container-1 .card .svg, section .row .container-2 .card .svg {
+  position: absolute;
+  top: -30px;
+}
+section .row .container-1 .card h3, section .row .container-2 .card h3 {
+  font-size: 1.2rem;
+  margin: .7rem 0;
+}
+section .row .container-1 .card p, section .row .container-2 .card p {
+  margin: 1rem 0;
+}
+section .row .container-1 .card a, section .row .container-2 .card a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+section .row .container-2 {
+  margin: .9rem;
+  padding: 2rem;
+}
+section .row .container-2 .text h1, section .row .container-2 .text p {
+  text-align: center;
+  font-weight: 400;
+  margin: 1.2rem;
+}
+section .row .container-2 .groups {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 1rem 0;
+}
+section .row .container-2 .groups .group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+section .row .container-2 .groups .group label {
+  margin: .5rem .5rem;
+}
+section .row .container-2 .groups .group select {
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.158);
+  background-color: white;
+  margin: 0 .5rem;
+}
+section .row .container-2 .submit {
+  margin: 5rem 1rem 2rem;
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #4361EE;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: 1px solid #4361EE;
+  transition: all 500ms;
+}
+.btn:hover {
+  color: #4361EE;
+  background-color: white;
+}
+
+.container {
+  font-family: 'Quicksand', sans-serif;
+}
+.container h1 {
+  background-color: #0E1726;
+  color: white;
+  padding: 1.3rem 0;
+  text-align: center;
+}
+.container .steps {
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.container .steps a {
+  display: inline-block;
+  margin: 1rem .2rem;
+  padding: .4rem;
+  width: 20%;
+  text-decoration: none;
+  border-radius: 8px;
+  color: black;
+}
+.container .steps a.active {
+  color: white;
+  background-color: #4361EE;
+}
+.container .games {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.container .games a {
+  margin: 1rem;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 6px;
+  color: black;
+}
+.container .games a.active {
+  color: white;
+  background-color: #E2A03F;
+}
+.container .dropdowns .dropdown {
+  border: 1px solid black;
+  margin: 1rem 2rem;
+  border-radius: 10px;
+  transition: all 500ms;
+}
+.container .dropdowns .dropdown .icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.container .dropdowns .dropdown .icon h1 {
+  text-align: left;
+  padding: 1rem 2rem;
+  color: black;
+  background-color: white;
+}
+.container .dropdowns .dropdown .icon i {
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+.container .dropdowns .dropdown p {
+  margin: 2rem 1rem;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  section .row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    width: 90%;
+  }
+  section .row .container-1, section .row .container-2 {
+    background-color: white;
+    padding: .5rem;
+  }
+  section .row .container-1 .card, section .row .container-2 .card {
+    margin: 5.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.123);
+    padding: 2rem;
+    position: relative;
+  }
+  section .row .container-1 .card .svg, section .row .container-2 .card .svg {
+    position: absolute;
+    top: -30px;
+  }
+  section .row .container-1 .card h3, section .row .container-2 .card h3 {
+    font-size: 1.2rem;
+    margin: .7rem 0;
+  }
+  section .row .container-1 .card p, section .row .container-2 .card p {
+    margin: 1rem 0;
+  }
+  section .row .container-1 .card a, section .row .container-2 .card a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  section .row .container-2 .groups {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  section .row .container-2 .groups .group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  section .row .container-2 .groups .group select {
+    display: inline-block;
+    width: 100%;
+  }
+  section .row .container-2 .submit a {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: .7rem 1rem;
+    font-size: .7rem;
+  }
+
+  .container .steps {
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .container .steps a {
+    display: inline-block;
+    margin: 1rem .2rem;
+    padding: .4rem;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 8px;
+    color: black;
+  }
+  .container .steps a.active {
+    color: white;
+    background-color: #4361EE;
+  }
+  .container .games {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .container .games a {
+    text-decoration: none;
+    padding: 1rem;
+    width: 80%;
+    border-radius: 6px;
+    color: black;
+  }
+  .container .games a.active {
+    color: white;
+    background-color: #E2A03F;
+  }
+  .container .dropdowns .dropdown {
+    border: 1px solid black;
+    margin: 1rem 2rem;
+    border-radius: 10px;
+    transition: all 500ms;
+  }
+  .container .dropdowns .dropdown .icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .container .dropdowns .dropdown .icon h1 {
+    text-align: left;
+    padding: 1rem 2rem;
+    color: black;
+    background-color: white;
+  }
+  .container .dropdowns .dropdown .icon i {
+    margin-right: 2rem;
+    font-size: 2rem;
+  }
+  .container .dropdowns .dropdown p {
+    margin: 2rem 1rem;
+    display: none;
+  }
+}

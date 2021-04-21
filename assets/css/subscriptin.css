@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #B1B1B1;
+  background-color: #f1f1f1;
 }
 
 .blocked {
@@ -201,7 +201,6 @@ section .container {
 }
 section .container .search {
   text-align: right;
-  height: 10px;
 }
 section .container .search input {
   padding: .7rem;
@@ -253,7 +252,7 @@ section .container .overflow table tbody tr .player .player-img {
   width: 40px;
   height: 40px;
   border-radius: 100px;
-  background: url(../images/icon.png);
+  background: url(../img/profile.jpeg);
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 100%;

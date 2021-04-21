@@ -15,8 +15,7 @@
     <!-- BEGIN PAGE LEVEL STYLES -->
     <link href="assets/css/apps/mailing-chat.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/subscriptin.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="assets/css/extra.css">
     <!-- END PAGE LEVEL STYLES -->
     
 </head>
@@ -311,7 +310,7 @@
                     </li>
 
                     <li class="menu single-menu">
-                        <a  href="subscription.html" class="dropdown-toggle autodroprown">
+                        <a  href="subscription.html"class="dropdown-toggle autodroprown">
                             <div class="">
                                 <img src="assets/images/icons/gift.svg" alt="">
                                 <span>Sponsorship Program</span>
@@ -346,33 +345,104 @@
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
             <section>
-                <div class="container">
-                    <div class="search">
-                        <input type="text" onkeyup="search()" placeholder="Search" id="search">
+                <div class="row">
+                    <div class="container-1">
+                        <div class="card">
+                            <div class="svg">
+                                <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M55 0H6C2.68629 0 0 2.68629 0 6V55C0 58.3137 2.68629 61 6 61H55C58.3137 61 61 58.3137 61 55V6C61 2.68629 58.3137 0 55 0Z"
+                                        fill="#4361EE" />
+                                    <path
+                                        d="M48.924 38.104V21.727C48.9232 21.009 48.7335 20.3039 48.374 19.6823C48.0145 19.0608 47.4979 18.5448 46.876 18.186L32.5471 9.99795C31.9247 9.63863 31.2187 9.44946 30.5 9.44946C29.7814 9.44946 29.0754 9.63863 28.4531 9.99795L14.123 18.186C13.5013 18.5449 12.985 19.061 12.6257 19.6825C12.2664 20.304 12.0768 21.0091 12.076 21.727V38.104C12.0767 38.822 12.2661 39.5273 12.6254 40.149C12.9847 40.7707 13.5012 41.2869 14.123 41.646L28.4531 49.834C29.0754 50.1933 29.7814 50.3824 30.5 50.3824C31.2187 50.3824 31.9247 50.1933 32.5471 49.834L46.876 41.646C47.4978 41.287 48.0141 40.7709 48.3734 40.1494C48.7327 39.5279 48.9223 38.8228 48.923 38.105L48.924 38.104Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.629 19.5979L30.5 29.9359L48.371 19.5979" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M30.5 50.551V29.916" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3>Propose your challenge</h3>
+                            <p>Choose your game, platform, bet & challenge other players</p>
+                            <a href="">Create my challenge <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                        </div>
                     </div>
+                    <div class="container-2">
+                        <div class="text">
+                            <h1>Find a Challenge</h1>
+                            <p>Use those filter to find the perfect challenge</p>
+                        </div>
+                        <div class="form">
+                            <div class="groups">
+                                <div class="group">
+                                    <label for="Game">Game</label>
+                                    <select name="" id="">
+                                        <option value="">Fifa 21</option>
+                                        <option value="">COD</option>
+                                        <option value="">CSGO</option>
+                                        <option value="">Dota 2</option>
+                                    </select>
+                                </div>
+                                <div class="group">
+                                    <label for="Game">Platforme</label>
+                                    <select name="" id="">
+                                        <option value="">Xbox One</option>
+                                        <option value="">PlayStation 4</option>
+                                        <option value="">PlayStation 5</option>
+                                        <option value="">PC</option>
+                                    </select>
+                                </div>
+                                <div class="group">
+                                    <label for="Game">MODE</label>
+                                    <select name="" id="">
+                                        <option value="">+3 Stars</option>
+                                        <option value="">+4 Stars</option>
+                                        <option value="">+5 Stars</option>
+                                        <option value="">+6 Stars</option>
+                                    </select>
+                                </div>
+                                <div class="group">
+                                    <label for="Game">Bet</label>
+                                    <select name="" id="">
+                                        <option value="">Between 1 to 5 <i class="fa fa-eur"></i></option>
+                                        <option value="">Between 5 to 10 <i class="fa fa-eur"></i></option>
+                                        <option value="">Between 10 to 15 <i class="fa fa-eur"></i></option>
+                                        <option value="">Between 20 to 25 <i class="fa fa-eur"></i></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="submit">
+                                <a href="" type="submit" class="btn">Propose your challenge</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
                     <div class="overflow">
                         <table id="content">
                             <thead>
-                                <th>Rank</th>
                                 <th>Player</th>
-                                <th>Challenges</th>
-                                <th>Win</th>
-                                <th>Draw</th>
-                                <th>Loose</th>
+                                <th>Game</th>
+                                <th>Platforme</th>
+                                <th>Mode</th>
+                                <th>Creation Date</th>
+                                <th>Wished Bet</th>
                                 <th>Level</th>
-                                <th>Earnings</th>
+                                <th>Action</th>
                             </thead>
                             <tbody class="page-1">
                                 <tr>
-                                    <td>1</td>
                                     <td class="player">
-                                        <div class="player-img"></div>
                                         <p>John Doe</p>
                                     </td>
-                                    <td>33</td>
-                                    <td>21</td>
-                                    <td>11</td>
-                                    <td>21</td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
                                     <td class="stars">
                                         <span class="fa fa-star star checked"></span>
                                         <span class="fa fa-star star checked"></span>
@@ -380,56 +450,23 @@
                                         <span class="fa fa-star star"></span>
                                         <span class="fa fa-star star"></span>
                                     </td>
-                                    <td>$324,233</td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
                                     <td class="player">
-                                        <div class="player-img"></div>
-                                        <p>Muhammad Umair</p>
-                                    </td>
-                                    <td>33</td>
-                                    <td>21</td>
-                                    <td>11</td>
-                                    <td>21</td>
-                                    <td class="stars">
-                                        <span class="fa fa-star star checked"></span>
-                                        <span class="fa fa-star star checked"></span>
-                                        <span class="fa fa-star star checked"></span>
-                                        <span class="fa fa-star star"></span>
-                                        <span class="fa fa-star star"></span>
-                                    </td>
-                                    <td>$324,233</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td class="player">
-                                        <div class="player-img"></div>
-                                        <p>Bob sueraz juan Marron</p>
-                                    </td>
-                                    <td>33</td>
-                                    <td>21</td>
-                                    <td>11</td>
-                                    <td>21</td>
-                                    <td class="stars">
-                                        <span class="fa fa-star star checked"></span>
-                                        <span class="fa fa-star star checked"></span>
-                                        <span class="fa fa-star star checked"></span>
-                                        <span class="fa fa-star star"></span>
-                                        <span class="fa fa-star star"></span>
-                                    </td>
-                                    <td>$324,233</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td class="player">
-                                        <div class="player-img"></div>
                                         <p>John Doe</p>
                                     </td>
-                                    <td>33</td>
-                                    <td>21</td>
-                                    <td>11</td>
-                                    <td>21</td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
                                     <td class="stars">
                                         <span class="fa fa-star star checked"></span>
                                         <span class="fa fa-star star checked"></span>
@@ -437,18 +474,23 @@
                                         <span class="fa fa-star star"></span>
                                         <span class="fa fa-star star"></span>
                                     </td>
-                                    <td>$324,233</td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
                                     <td class="player">
-                                        <div class="player-img"></div>
                                         <p>John Doe</p>
                                     </td>
-                                    <td>33</td>
-                                    <td>21</td>
-                                    <td>11</td>
-                                    <td>21</td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
                                     <td class="stars">
                                         <span class="fa fa-star star checked"></span>
                                         <span class="fa fa-star star checked"></span>
@@ -456,20 +498,97 @@
                                         <span class="fa fa-star star"></span>
                                         <span class="fa fa-star star"></span>
                                     </td>
-                                    <td>$324,233</td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="player">
+                                        <p>John Doe</p>
+                                    </td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="stars">
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star"></span>
+                                        <span class="fa fa-star star"></span>
+                                    </td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="player">
+                                        <p>John Doe</p>
+                                    </td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="stars">
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star"></span>
+                                        <span class="fa fa-star star"></span>
+                                    </td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="player">
+                                        <p>John Doe</p>
+                                    </td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="stars">
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star"></span>
+                                        <span class="fa fa-star star"></span>
+                                    </td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
                                 </tr>
                             </tbody>
                             <tbody class="page-2 blocked">
                                 <tr>
-                                    <td>1</td>
                                     <td class="player">
-                                        <div class="player-img"></div>
                                         <p>John Doe</p>
                                     </td>
-                                    <td>33</td>
-                                    <td>21</td>
-                                    <td>11</td>
-                                    <td>21</td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
                                     <td class="stars">
                                         <span class="fa fa-star star checked"></span>
                                         <span class="fa fa-star star checked"></span>
@@ -477,37 +596,23 @@
                                         <span class="fa fa-star star"></span>
                                         <span class="fa fa-star star"></span>
                                     </td>
-                                    <td>$324,233</td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
                                     <td class="player">
-                                        <div class="player-img"></div>
-                                        <p>John Kahn</p>
-                                    </td>
-                                    <td>33</td>
-                                    <td>21</td>
-                                    <td>11</td>
-                                    <td>21</td>
-                                    <td class="stars">
-                                        <span class="fa fa-star star checked"></span>
-                                        <span class="fa fa-star star checked"></span>
-                                        <span class="fa fa-star star checked"></span>
-                                        <span class="fa fa-star star"></span>
-                                        <span class="fa fa-star star"></span>
-                                    </td>
-                                    <td>$324,233</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td class="player">
-                                        <div class="player-img"></div>
                                         <p>John Doe</p>
                                     </td>
-                                    <td>33</td>
-                                    <td>21</td>
-                                    <td>11</td>
-                                    <td>21</td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
                                     <td class="stars">
                                         <span class="fa fa-star star checked"></span>
                                         <span class="fa fa-star star checked"></span>
@@ -515,18 +620,23 @@
                                         <span class="fa fa-star star"></span>
                                         <span class="fa fa-star star"></span>
                                     </td>
-                                    <td>$324,233</td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
                                     <td class="player">
-                                        <div class="player-img"></div>
                                         <p>John Doe</p>
                                     </td>
-                                    <td>33</td>
-                                    <td>21</td>
-                                    <td>11</td>
-                                    <td>21</td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
                                     <td class="stars">
                                         <span class="fa fa-star star checked"></span>
                                         <span class="fa fa-star star checked"></span>
@@ -534,18 +644,23 @@
                                         <span class="fa fa-star star"></span>
                                         <span class="fa fa-star star"></span>
                                     </td>
-                                    <td>$324,233</td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
                                     <td class="player">
-                                        <div class="player-img"></div>
                                         <p>John Doe</p>
                                     </td>
-                                    <td>33</td>
-                                    <td>21</td>
-                                    <td>11</td>
-                                    <td>21</td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
                                     <td class="stars">
                                         <span class="fa fa-star star checked"></span>
                                         <span class="fa fa-star star checked"></span>
@@ -553,39 +668,73 @@
                                         <span class="fa fa-star star"></span>
                                         <span class="fa fa-star star"></span>
                                     </td>
-                                    <td>$324,233</td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="player">
+                                        <p>John Doe</p>
+                                    </td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="stars">
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star"></span>
+                                        <span class="fa fa-star star"></span>
+                                    </td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="player">
+                                        <p>John Doe</p>
+                                    </td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="stars">
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star"></span>
+                                        <span class="fa fa-star star"></span>
+                                    </td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
                                 </tr>
                             </tbody>
                             <tbody class="page-3 blocked">
                                 <tr>
-                                    <td>1</td>
                                     <td class="player">
-                                        <div class="player-img"></div>
-                                        <p>John Bob</p>
-                                    </td>
-                                    <td>33</td>
-                                    <td>21</td>
-                                    <td>11</td>
-                                    <td>21</td>
-                                    <td class="stars">
-                                        <span class="fa fa-star star checked"></span>
-                                        <span class="fa fa-star star checked"></span>
-                                        <span class="fa fa-star star checked"></span>
-                                        <span class="fa fa-star star"></span>
-                                        <span class="fa fa-star star"></span>
-                                    </td>
-                                    <td>$324,233</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td class="player">
-                                        <div class="player-img"></div>
                                         <p>John Doe</p>
                                     </td>
-                                    <td>33</td>
-                                    <td>21</td>
-                                    <td>11</td>
-                                    <td>21</td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
                                     <td class="stars">
                                         <span class="fa fa-star star checked"></span>
                                         <span class="fa fa-star star checked"></span>
@@ -593,18 +742,23 @@
                                         <span class="fa fa-star star"></span>
                                         <span class="fa fa-star star"></span>
                                     </td>
-                                    <td>$324,233</td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
                                     <td class="player">
-                                        <div class="player-img"></div>
                                         <p>John Doe</p>
                                     </td>
-                                    <td>33</td>
-                                    <td>21</td>
-                                    <td>11</td>
-                                    <td>21</td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
                                     <td class="stars">
                                         <span class="fa fa-star star checked"></span>
                                         <span class="fa fa-star star checked"></span>
@@ -612,18 +766,23 @@
                                         <span class="fa fa-star star"></span>
                                         <span class="fa fa-star star"></span>
                                     </td>
-                                    <td>$324,233</td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
                                     <td class="player">
-                                        <div class="player-img"></div>
                                         <p>John Doe</p>
                                     </td>
-                                    <td>33</td>
-                                    <td>21</td>
-                                    <td>11</td>
-                                    <td>21</td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
                                     <td class="stars">
                                         <span class="fa fa-star star checked"></span>
                                         <span class="fa fa-star star checked"></span>
@@ -631,18 +790,23 @@
                                         <span class="fa fa-star star"></span>
                                         <span class="fa fa-star star"></span>
                                     </td>
-                                    <td>$324,233</td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1</td>
                                     <td class="player">
-                                        <div class="player-img"></div>
                                         <p>John Doe</p>
                                     </td>
-                                    <td>33</td>
-                                    <td>21</td>
-                                    <td>11</td>
-                                    <td>21</td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
                                     <td class="stars">
                                         <span class="fa fa-star star checked"></span>
                                         <span class="fa fa-star star checked"></span>
@@ -650,13 +814,63 @@
                                         <span class="fa fa-star star"></span>
                                         <span class="fa fa-star star"></span>
                                     </td>
-                                    <td>$324,233</td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="player">
+                                        <p>John Doe</p>
+                                    </td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="stars">
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star"></span>
+                                        <span class="fa fa-star star"></span>
+                                    </td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="player">
+                                        <p>John Doe</p>
+                                    </td>
+                                    <td>Fifa2D</td>
+                                    <td>Match Amical</td>
+                                    <td>Xbox One</td>
+                                    <td>18/3/2021</td>
+                                    <td>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                        <i class="fa fa-eur" aria-hidden="true"></i>
+                                    </td>
+                                    <td class="stars">
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star checked"></span>
+                                        <span class="fa fa-star star"></span>
+                                        <span class="fa fa-star star"></span>
+                                    </td>
+                                    <td>
+                                        <a href="" class="btn">Send Message</a>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     
-        
+                    
                     <div class="page-change">
                         <div class="btn-1 active">1</div>
                         <div class="btn-2">2</div>
@@ -683,6 +897,17 @@
             App.init();
         });
     </script>
+     <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/tablebody.js"></script>
+    <script src="assets/js/tablesearch.js"></script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="assets/js/custom.js"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
 

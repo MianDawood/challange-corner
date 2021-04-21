@@ -1,0 +1,311 @@
+@import 'mixins';
+@import 'variables';
+
+section {
+    @include flex(column);
+    font-family: 'Quicksand', sans-serif;
+    .row {
+        @include flex(row, flex-start, center);
+        padding: 1rem;
+        width: 90%;
+
+        .container-1 {
+            background-color: white;
+            padding: .5rem;
+
+            .card {
+                margin: 5.5rem 1rem;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.123) ;
+                padding: 2rem;
+
+                position: relative;
+                .svg {
+                    position: absolute;
+                    top: -30px;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                    margin: .7rem 0;
+                }
+                p {
+                    margin: 1rem 0;
+                }
+                a {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+            }
+        }
+        .container-2 {
+            margin: .9rem;
+            padding: 2rem;
+            @extend .container-1;
+
+            .text {
+                h1,p {
+                    text-align: center;
+                    font-weight: 400;
+
+                    margin: 1.2rem;
+                    
+                }
+                
+            }
+            .groups {
+                @include flex();
+                margin: 1rem 0 ;
+                .group {
+                    @include flex(column, flex-start, flex-start);
+
+                    label {
+                        margin: .5rem .5rem;
+                    }
+                    select {
+                        padding: 1rem 1.5rem;
+                        font-size: 1.1rem;
+                        outline: none;
+                        border: 1px solid rgba(0, 0, 0, 0.158);
+                        background-color: white;
+                        margin: 0 .5rem;
+                    }
+                    
+                }
+            }
+            .submit {
+                margin: 5rem 1rem 2rem;
+                text-align: center;
+                
+            }
+        }
+    }
+}
+.btn {
+    text-decoration: none;
+    background-color: #4361EE;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: 1px solid #4361EE;
+    transition: all 500ms;
+
+    &:hover {
+        color: #4361EE;
+        background-color: white;
+    }
+}
+
+
+.container {
+    font-family: 'Quicksand', sans-serif;
+    h1 {
+        background-color: $primary-color;
+        color: white;
+        padding: 1.3rem 0 ;
+        text-align: center;
+    }
+
+    .steps {
+        padding: 1rem 1rem ;
+        @include flex(row, space-evenly, center);
+        a {
+            display: inline-block;
+            margin: 1rem .2rem;
+            padding: .4rem;
+            width: 20%;
+            text-decoration: none;
+            border-radius: 8px;
+            color: black;
+
+            &.active {
+                color: white;
+                background-color: #4361EE;
+            }
+        }
+    }
+    .games {
+        padding: 1rem 0 ;
+        @include flex(row, flex-start, center);
+        
+        a {
+            margin: 1rem;
+            text-decoration: none;
+            padding: 1rem;
+            border-radius: 6px;
+            color: black;
+            
+            &.active {
+                color: white;
+                background-color: #E2A03F;
+
+            }
+        }
+    }
+
+    .dropdowns {
+        .dropdown {
+            border: 1px solid black;
+            margin: 1rem 2rem;
+            border-radius: 10px;
+            transition: all 500ms;
+
+            .icon {
+                @include flex(row, space-between);
+                h1 {
+                    text-align: left;
+                    padding: 1rem 2rem ;
+                    color: black;
+                    background-color: white;
+                }
+                i {
+                    margin-right: 2rem;
+                    font-size: 2rem;
+                }
+            }
+
+            p {
+                margin: 2rem 1rem;
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 900px) {
+    section {
+    .row {
+        @include flex(column, flex-start, center);
+        padding: 1rem;
+        width: 90%;
+
+        .container-1 {
+            background-color: white;
+            padding: .5rem;
+
+            .card {
+                margin: 5.5rem 1rem;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.123) ;
+                padding: 2rem;
+
+                position: relative;
+                .svg {
+                    position: absolute;
+                    top: -30px;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                    margin: .7rem 0;
+                }
+                p {
+                    margin: 1rem 0;
+                }
+                a {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+            }
+        }
+        .container-2 {
+            .groups {
+                @include flex(column, flex-start, flex-start);
+                .group {
+                    @include flex(column, flex-start, flex-start);
+                    select {
+                        display: inline-block;
+                        width: 100%;
+                    }
+                    
+                }
+            }
+            .submit {
+                a {
+                    display: inline-block;
+                    width: 100%;
+                }
+                
+            }
+        }
+    }
+    }
+
+    .btn {
+        display: inline-block;
+        padding: .7rem 1rem;
+        font-size: .7rem;
+    }
+
+    .container {
+
+    .steps {
+        padding: 1rem 1rem ;
+        @include flex(column, space-evenly, flex-start);
+        a {
+            display: inline-block;
+            margin: 1rem .2rem;
+            padding: .4rem;
+            width: 100%;
+            text-decoration: none;
+            border-radius: 8px;
+            color: black;
+
+            &.active {
+                color: white;
+                background-color: #4361EE;
+            }
+        }
+    }
+    .games {
+        padding: 1rem 0 ;
+        @include flex(column, flex-start, flex-start);
+        
+        a {
+            text-decoration: none;
+            padding: 1rem;
+            width: 80%;
+            border-radius: 6px;
+            color: black;
+            
+            &.active {
+                color: white;
+                background-color: #E2A03F;
+
+            }
+        }
+    }
+
+    .dropdowns {
+        .dropdown {
+            border: 1px solid black;
+            margin: 1rem 2rem;
+            border-radius: 10px;
+            transition: all 500ms;
+
+            .icon {
+                @include flex(row, space-between);
+                h1 {
+                    text-align: left;
+                    padding: 1rem 2rem ;
+                    color: black;
+                    background-color: white;
+                }
+                i {
+                    margin-right: 2rem;
+                    font-size: 2rem;
+                }
+            }
+
+            p {
+                margin: 2rem 1rem;
+                display: none;
+            }
+        }
+    }
+}
+    
+}
