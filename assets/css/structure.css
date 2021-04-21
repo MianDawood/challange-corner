@@ -84,8 +84,7 @@ code {
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
   max-width: 1600px;
-  margin: 0 auto;
-  margin-top: 128px; }
+  margin: 0 auto; }
 
 .main-container-fluid > .main-content > .container {
   float: left;
@@ -1046,7 +1045,6 @@ code {
         .topbar-nav.header nav#topbar ul.menu-categories li.menu > a {
           display: flex;
           height: 100%;
-          padding: 10px 0 10px 0;
           margin-right: 44px;
           border-radius: 6px; }
         .topbar-nav.header nav#topbar ul.menu-categories li.menu:hover a > div span, .topbar-nav.header nav#topbar ul.menu-categories li.menu:hover a > div svg:not(.feather-chevron-down) {
